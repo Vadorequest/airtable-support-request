@@ -1,14 +1,16 @@
-import Link from 'next/link'
+import * as React from 'react'
+import Button from '../components/Button'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+  <Layout title="Ma super app">
+    <Button
+      handleOnClick={() => {
+        console.log('click meeee');
+      }}
+    >
+      Envoyer
+    </Button>
   </Layout>
 )
 
