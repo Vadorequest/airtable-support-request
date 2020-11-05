@@ -1,16 +1,10 @@
 import * as React from 'react'
-import Button from '../components/Button'
 import Layout from '../components/Layout'
+import ReportDialog from '../components/ReportDialog'
 
 const IndexPage = () => (
   <Layout title="Ma super app">
-    <Button
-      handleOnClick={() => {
-        console.log('click meeee');
-      }}
-    >
-      Envoyer
-    </Button>
+    <ReportDialog />
   </Layout>
 )
 

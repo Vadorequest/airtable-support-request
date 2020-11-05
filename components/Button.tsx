@@ -2,8 +2,6 @@ import * as React from 'react'
 import { ReactNode } from 'react';
 import styles from './Button.module.css'
 
-type myString = string;
-
 type Props = {
     text?: string;
     children: ReactNode;
