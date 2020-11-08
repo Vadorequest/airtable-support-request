@@ -18,7 +18,23 @@ const ReportDialog = (props: Props) => {
             <div>
                 <Button
                     handleOnClick={() => {
-                        console.log('click meeee');
+                        // Get form data
+                        const reason = 'othing-is-wnorking-dude'
+                        const message = 'Ceci est un message pas content'
+                        const body = {
+                            reason: reason,
+                            message: message,
+                        }
+                        console.log('body', body)
+
+                        // Call /api/airtable/createRecord with form data
+                        fetch('/api/airtable/createRecord', {
+                            method: 'post',
+                            body: JSON.stringify(body)
+                        })
+
+                        // Display success/failure message (below form)
+                        // Reset form
                     }}
                 >
                     Envoyer
